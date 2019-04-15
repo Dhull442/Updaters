@@ -1,0 +1,9 @@
+dn: olcDatabase={1}mdb,cn=config
+replace: olcAccess
+olcAccess: to attrs=userPassword,shadowLastChange,krbPrincipalKey by dn="cn=admin,dc=example,dc=com" write by anonymous auth by self write by * none
+-
+add: olcAccess
+olcAccess: to dn.base="" by * read
+-
+add: olcAccess
+olcAccess: to * by dn="cn=admin,dc=example,dc=com" write by * read

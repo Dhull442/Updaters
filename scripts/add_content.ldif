@@ -1,0 +1,29 @@
+
+dn: cn=miners,ou=Groups,dc=kbs,dc=com
+objectClass: posixGroup
+cn: miners
+gidNumber: 5000
+
+dn: uid=john,ou=People,dc=kbs,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: john
+sn: Doe
+givenName: John
+cn: John Doe
+displayName: John Doe
+uidNumber: 10000
+gidNumber: 5000
+userPassword: johnldap
+gecos: John Doe
+loginShell: /bin/bash
+homeDirectory: /home/john
+dn: ou=people,dc=kbs,dc=com
+objectClass: organizationalUnit
+ou: people
+
+dn: ou=groups,dc=kbs,dc=com
+objectClass: organizationalUnit
+ou: groups
+

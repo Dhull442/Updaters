@@ -1,0 +1,15 @@
+dn: uid=user1,ou=People,dc=kbs,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: user1
+sn: User one
+givenName: User Number 1
+cn: User Number1
+displayName: UserName
+uidNumber: 10001
+gidNumber: 5000
+userPassword: iamuser1
+gecos: user1
+loginShell: /bin/bash
+homeDirectory: /home/user1
